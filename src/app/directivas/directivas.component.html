@@ -1,0 +1,25 @@
+<ng-template #primer><h3>Soy el primero 1️⃣</h3></ng-template>
+<ng-template #segundo><h3>Soy el segundo 2️⃣</h3></ng-template>
+
+<h1>Ejemplos de directivas</h1>
+
+<h2>Directiva ngIf</h2>
+<ng-container *ngIf="bool;then segundo else primer"></ng-container>
+<button (click)="cambiarBool()">Pulsa para cambiar el html</button>
+
+<h2>Directiva ngFor</h2>
+<ul>
+  <li *ngFor="let item of array; index as i; ">
+    Elemento {{i+1}}º: {{item}}
+  </li>
+</ul>
+
+<h2>Directiva ngSwitch</h2>
+<ng-container [ngSwitch]="numberSwitch">
+  <div *ngSwitchCase="1"><h3>Primer caso</h3></div>
+  <div *ngSwitchCase="2"><h3>Segundo caso</h3></div>
+  <div *ngSwitchCase="3"><h3>Tercer caso</h3></div>
+  <div *ngSwitchCase="4"><h3>Cuarto caso</h3></div>
+</ng-container>
+<br>
+<button (click)="sumarNumero()">Cambiar contenido</button>

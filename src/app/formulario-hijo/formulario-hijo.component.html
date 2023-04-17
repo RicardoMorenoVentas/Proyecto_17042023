@@ -1,0 +1,9 @@
+<h2>Formulario de nuevo paciente:</h2>
+<p><small>Nombre*</small><br> <input type="text" [(ngModel)]="paciente_formulario.nombre"></p>
+<p><small>Apellidos*</small><br> <input type="text" [(ngModel)]="paciente_formulario.apellidos"></p>
+<p><small>DNI*</small><br> <input type="text" [(ngModel)]="paciente_formulario.dni"></p>
+<p><small>Teléfono*</small><br> <input type="tel" [(ngModel)]="paciente_formulario.telefono"></p>
+<p><small>Dirección*</small><br> <input type="text" [(ngModel)]="paciente_formulario.direccion"></p>
+<p><small>Email*</small><br> <input type="email" [(ngModel)]="paciente_formulario.email"></p>
+<button (click)="mandarNuevoPaciente()">Aceptar</button>
+<button (click)="reiniciarPaciente()">Cancelar</button>

@@ -1,0 +1,12 @@
+<app-lista-hijo [recibirPacEvent]="medico_out"></app-lista-hijo>
+<ng-form>
+  <h2>Formulario de nuevo médico:</h2>
+  <p><small>Nombre*</small><br> <input type="text" name="nombre" [(ngModel)]="medico_actual.nombre"></p>
+  <p><small>Apellidos*</small><br> <input type="text" name="apellidos" [(ngModel)]="medico_actual.apellidos"></p>
+  <p><small>DNI*</small><br> <input type="text" name="dni" [(ngModel)]="medico_actual.dni"></p>
+  <p><small>Teléfono*</small><br> <input type="tel" name="telefono" [(ngModel)]="medico_actual.telefono"></p>
+  <p><small>Dirección*</small><br> <input type="text" name="direccion" [(ngModel)]="medico_actual.direccion"></p>
+  <p><small>Email*</small><br> <input type="email" name="email  " [(ngModel)]="medico_actual.email"></p>
+  <button (click)="mandarMedico()">Aceptar</button>
+  <button (click)="reiniciarMedico()">Cancelar</button>
+</ng-form>

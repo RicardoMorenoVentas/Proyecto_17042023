@@ -1,0 +1,16 @@
+<!-- Aquí va el formulario -->
+<app-formulario-hijo (eventoMPaciente)='addPaciente($event)'></app-formulario-hijo>
+<br><br>
+<!-- Aquí la lista de pacientes -->
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Apellidos</th>
+  </tr>
+  <tr *ngFor="let item of lista_pacientes; index as i;">
+    <td>{{item.id_paciente}}</td>
+    <td>{{item.nombre}}</td>
+    <td>{{item.apellidos}}</td>
+  </tr>
+</table>

@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Apellidos</th>
+  </tr>
+  <tr *ngFor="let item of lista_medicos; index as i;">
+    <td>{{item.id_medico}}</td>
+    <td>{{item.nombre}}</td>
+    <td>{{item.apellidos}}</td>
+  </tr>
+</table>
